@@ -1,17 +1,31 @@
-# FliSol-2017-Dino-Run
+# Dino Run (FliSoL 2017)
 
-Projeto realizado no Festival Latino-americano de Instalação de Software Livre 2017 (FliSol)
+> Módulo Android de um jogo endless runner em LibGDX, desenvolvido durante o Festival Latino-americano de Instalação de Software Livre de 2017.
 
-### Evento
-![Img1](https://3.bp.blogspot.com/-O9G1RcvZ4Ak/WGujkDz0MmI/AAAAAAAATS0/NrRzwi6Kl5MjzE-Rrnbom5JfyL1caKFRQCLcB/s1600/flisol-logo.png "Filsol 2017")
+![status](https://img.shields.io/badge/status-concluído-success) ![libgdx](https://img.shields.io/badge/LibGDX-Android-red) ![java](https://img.shields.io/badge/Java-7-blue)
 
-### Screenshot
-![Img1](https://image.ibb.co/dcJvt5/dino_run.png "Dino Run")
+## Sobre
+Atividade prática da oficina de jogos do FliSoL 2017, baseada no tutorial de William Mora. Este repositório contém o módulo Android (lançador, manifesto, recursos e a spritesheet empacotada com TexturePacker) e o APK gerado (`android-release.apk`). O módulo `core` com a lógica do jogo (`GameRun`) não foi versionado.
 
-### 
-- Android Studio
-- Gradle
-- LibGDX
-- TexturePacker
+## Stack
+- LibGDX, Android SDK 25 (mínimo 8), Gradle, Android Studio
+- TexturePacker para a spritesheet
 
-*Special Thanks to William Mora*
+## Estrutura de pastas
+```text
+AndroidManifest.xml
+src/com/flisol2017/dino/AndroidLauncher.java   inicializa a aplicação LibGDX
+assets/spritesheet.pack                        atlas de sprites
+res/                                           strings e tema
+build.gradle                                   configuração Android e cópia das bibliotecas nativas
+android-release.apk                            build final
+```
+
+## Como executar
+Instale `android-release.apk` em um dispositivo Android ou emulador.
+
+## Status
+Concluído para o evento. Não recebe manutenção.
+
+## Autor
+Ronildo Silva · ronildo.comp@gmail.com
